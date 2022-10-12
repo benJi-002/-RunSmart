@@ -1,0 +1,29 @@
+.benefits {
+    min-height: 470px;
+    padding: 70px 0 65px 0;
+    background: url(../img/benefits/bg.jpg);
+    &__wrapper {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(2) {
+            align-items: center;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 277px;
+        height: 250px;
+        align-items: center;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        span {
+            text-decoration-line: underline;
+            color: #FF0000;
+        }
+    }
+}
