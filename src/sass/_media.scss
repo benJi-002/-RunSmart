@@ -143,6 +143,11 @@
     }
     .container {
         width: 485px;
+        .promo {
+            &__wrapper {
+                align-items: center;
+            }
+        }
     }
 }
 	
