@@ -65,6 +65,10 @@
             width: 235px;
             font-size: 13px;
         }
+        &_submit {
+            width: 100%;
+            font-size: 16px;
+        }
     }
     .title {
         font-size: 21px;
@@ -137,6 +141,10 @@
             width: 235px;
             font-size: 13px;
         }
+        &_submit {
+            width: 100%;
+            font-size: 16px;
+        }
     }
     .title {
         font-size: 21px;
@@ -160,9 +168,17 @@
             height: 45px;
             font-size: 12px;
         }
+        &_submit {
+            width: 100%;
+            font-size: 13px;
+        }
     }
     .title {
         font-size: 16px;
+        &_left {
+            font-size: 14px;
+            text-align: center;
+        }
     }
     .container {
         width: 230px;
@@ -218,6 +234,17 @@
             &__descr {
                 display: none;
             } 
+        }
+        .consultation {
+            &__descr {
+                display: none;
+            }
+        }
+        .feed-form {
+            width: 100%;
+            input {
+                font-size: 13px;
+            }
         }
     }
 }
