@@ -7,23 +7,41 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        &:nth-child(2) {
-            align-items: center;
-        }
     }
     &__item {
         display: flex;
         flex-direction: column;
-        width: 277px;
+        width: 23%;
         height: 250px;
         align-items: center;
         img {
             display: block;
             margin: 0 auto;
-        }
-        span {
+        }  
+    }
+    &__subtitle {
+        font-weight: 700;
+        text-align: center;
+        color: #0D0D0D;
+        margin-top: 35px;
+        font-size: 18px;
+    }
+    &__descr {
+        font-weight: 300;
+        line-height: 18px;
+        color: #0D0D0D;
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+        a {
+            text-transform: uppercase;
             text-decoration-line: underline;
             color: #FF0000;
+            transition: 0.2s;
+            &:hover {
+                font-size: 13px;
+                font-weight: 700;
+            }
         }
     }
 }

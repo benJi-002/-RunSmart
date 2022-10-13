@@ -3,19 +3,218 @@
 }
 	
 @media (max-width: 1200px) {
+    .button {
+        &_main {
+            width: 260px;
+            font-size: 14px;
+        }
+    }
+    .title {
+        font-size: 25px;
+    }
+    .container {
+        width: 800px;
+        .header {
+            &__logo {
+                img {
+                    width: 85%;
+                }
+            }
+        }
+        .promo {
+            &__header {
+                font-size: 36px;
+            }
+            &__subheader {
+                font-size: 18px;
+                line-height: 18px;
+            }
+            &__icon {
+                font-size: 13px;
+            }
+            &__link {
+                font-size: 14px;
+            }
+        }
+        .benefits {
+            &__item {
+                width: 26%;
+            }
+            &__subtitle {
+                font-size: 16px;
+            }
+            &__descr {
+                line-height: 19px;
+                font-size: 13px;
+                a {
+                    &:hover {
+                        font-size: 13px;
+                    }
+                }
+            } 
+        }
+    }
 
 }
 	
 @media (max-width: 991px) {
-
+    .button {
+        width: 130px;
+        font-size: 10px;
+        &_main {
+            width: 235px;
+            font-size: 13px;
+        }
+    }
+    .title {
+        font-size: 21px;
+    }
+    .container {
+        width: 630px;
+        .header {
+            &__logo {
+                img {
+                    width: 80%;
+                }
+            }
+            &__official {
+                display: none;
+            }
+            &__phone {
+                font-size: 16px;
+            }
+        }    
+        .promo {
+            min-height: 690px;
+            background-size: 50px;
+            &__header {
+                font-size: 34px;
+            }
+            &__subheader {
+                font-size: 16px;
+                line-height: 16px;
+            }
+            &__icon {
+                font-size: 12px;
+            }
+            &__link {
+                font-size: 12px;
+            }
+        } 
+        .benefits {
+            &__wrapper {
+                flex-direction: column;
+            }
+            &__item {
+                margin-top: 55px;
+                width: 51%;
+                height: 100%;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+            &__subtitle {
+                font-size: 19px;
+            }
+            &__descr {
+                line-height: 21px;
+                font-size: 15px;
+                a {
+                    &:hover {
+                        font-size: 16px;
+                    }
+                }
+            } 
+        }
+    }
 }
 	
 @media (max-width: 767px) {
-
+    .button {
+        width: 130px;
+        font-size: 10px;
+        &_main {
+            width: 235px;
+            font-size: 13px;
+        }
+    }
+    .title {
+        font-size: 21px;
+    }
+    .container {
+        width: 485px;
+    }
 }
 	
 @media (max-width: 575px) {
-    
+    .button {
+        width: 130px;
+        font-size: 10px;
+        &_main {
+            width: 200px;
+            height: 45px;
+            font-size: 12px;
+        }
+    }
+    .title {
+        font-size: 16px;
+    }
+    .container {
+        width: 230px;
+        .header {
+            width: 210px;
+            height: 100px;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: space-between;
+            &__logo {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 70%;
+                }
+            }
+            &__official {
+                display: none;
+            }
+            &__phone {
+                font-size: 14px;
+            }
+        }    
+        .promo {
+            min-height: 690px;
+            background-size: 50px;
+            &__wrapper {
+                margin-top: 145px;
+                align-items: center;
+            }    
+            &__header {
+                font-size: 19px;
+            }
+            &__subheader {
+                margin-top: 8px;
+                font-size: 9px;
+                line-height: 9px;
+            }
+            &__icon {
+                display: none;
+            }
+            &__link {
+                font-size: 9px;
+            }
+        } 
+        .benefits {
+            &__item {
+                width: 75%;
+            }
+            &__subtitle {
+                font-size: 16px;
+            }
+            &__descr {
+                display: none;
+            } 
+        }
+    }
 }
 	
 

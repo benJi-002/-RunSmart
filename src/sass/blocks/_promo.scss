@@ -1,7 +1,10 @@
 .promo {
     min-height: 650px;
     padding: 21px 0 93px 0;
-    background: url(../img/header/bg.jpg) center (center/cover) no-repeat;
+    background-image: url(../img/header/bg.jpg);
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: auto;
     &__wrapper {
         display: flex;
         flex-direction: column;

@@ -1,13 +1,11 @@
 @import "base/_variables.scss";
 @import "base/_mixins.scss";
-@import "_media.scss";
 @import "blocks/promo";
 @import "blocks/header";
 @import "blocks/buttons";
 @import "blocks/benefits";
-@import "blocks/captions";
 @import "blocks/titles";
-@import "blocks/subtitles";
+@import "_media.scss";
 
 * {
 	font-family: 'Museo Sans Cyrl', sans-serif;
