@@ -54,7 +54,27 @@
             } 
         }
     }
-
+    .tns-item {
+        img {
+            width: 50%;
+        }
+    }
+    .prev {
+        transform: translateY(-72%);
+        left: 20px;
+    }
+    .next {
+        transform: translateY(-72%);
+        right: 20px;
+    }
+    #tns1-item1 {
+        margin: 0.5% 0;
+    }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+    }
 }
 	
 @media (max-width: 991px) {
@@ -68,6 +88,11 @@
         &_submit {
             width: 100%;
             font-size: 16px;
+        }
+        &_mini {
+            width: 115px;
+            height: 40px;
+            font-size: 11px;
         }
     }
     .title {
@@ -131,6 +156,17 @@
             } 
         }
     }
+    .prev img {
+        width: 25px;
+    }
+    .next img {
+        width: 25px;
+    }
+    .catalog {
+        &__tab {
+            font-size: 16px;
+        }
+    }
 }
 	
 @media (max-width: 767px) {
@@ -145,6 +181,9 @@
             width: 100%;
             font-size: 16px;
         }
+        &_mini {
+            font-size: 12px;
+        }
     }
     .title {
         font-size: 21px;
@@ -154,6 +193,30 @@
         .promo {
             &__wrapper {
                 align-items: center;
+            }
+        }
+    }
+    .carousel {
+        padding: 60px 0;
+    }
+    .tns-item {
+        img {
+            width: 80%;
+        }
+    }
+    .prev, .next {
+        display: none;
+    }
+    .catalog {
+        &__tab {
+            font-size: 14px;
+        }
+        &-item {
+            &__old-price {
+                font-size: 13px;
+            }
+            &__price {
+                font-size: 19px;
             }
         }
     }
@@ -171,6 +234,11 @@
         &_submit {
             width: 100%;
             font-size: 13px;
+        }
+        &_mini {
+            width: 91px;
+            height: 37px;
+            font-size: 11px;
         }
     }
     .title {
@@ -247,10 +315,34 @@
             }
         }
     }
+    .carousel {
+        padding: 45px 0;
+    }
+    .tns-item {
+        img {
+            width: 100%;
+        }
+    }
+    .prev, .next {
+        display: none;
+    } 
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }    
+        &__tab {
+            margin: 5px 0;
+        }
+        &-item {
+            &__list {
+                li{
+                    font-size: 12px;
+                }
+            }
+            &__price {
+                font-size: 17px;
+            }
+        }
+    }
 }
-	
-
-								
-				
-
-
