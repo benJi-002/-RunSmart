@@ -10,8 +10,8 @@
 .prev, .next {
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
-    left: -66px;
     border: none;
     background-color: #fff;
     img {
@@ -20,7 +20,7 @@
     }
 }
 .next {
-    right: -66px;
+    right: 0;
     left: auto;
 }
 .tns-item {
@@ -29,7 +29,25 @@
         margin: 0 auto;
     }
 }
-
 #tns1-item1 {
     margin: 1.5% 0;
+}
+.tns-nav {
+    position: absolute;
+    display: none;
+    justify-content: space-between;
+    width: 100px;
+    top: 102%;
+    left: 44%;
+}
+.tns-outer [aria-controls] {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.5s all;
+}
+
+.tns-nav-active {
+    background-color: $main-color;
 }

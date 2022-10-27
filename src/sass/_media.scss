@@ -53,6 +53,27 @@
                 }
             } 
         }
+        .catalog {
+            &__content {
+                justify-content: space-evenly;
+            }
+        }
+        .feedback {
+            &__img {
+                width: 149px;
+                height: 149px;
+            }
+            &__name {
+                font-size: 17px;
+            }
+            &__progress {
+                font-size: 13px;
+            }
+            &__review {
+                font-size: 15px;
+            }
+        }
+
     }
     .tns-item {
         img {
@@ -61,19 +82,14 @@
     }
     .prev {
         transform: translateY(-72%);
-        left: 20px;
+        left: 100px;
     }
     .next {
         transform: translateY(-72%);
-        right: 20px;
+        right: 100px;
     }
     #tns1-item1 {
         margin: 0.5% 0;
-    }
-    .catalog {
-        &__content {
-            justify-content: space-evenly;
-        }
     }
 }
 	
@@ -155,17 +171,54 @@
                 }
             } 
         }
-    }
-    .prev img {
-        width: 25px;
-    }
-    .next img {
-        width: 25px;
-    }
-    .catalog {
-        &__tab {
-            font-size: 16px;
+
+        .catalog {
+            &__tab {
+                font-size: 16px;
+            }
         }
+        .feedback {
+            &__item {
+                flex-wrap: wrap;
+            }
+            &__img {
+                width: 149px;
+                height: 149px;
+            }
+            &__text {
+            margin-left: 0;
+            margin-top: 25px;
+            }
+            &__name {
+                font-size: 17px;
+            }
+            &__progress {
+                font-size: 13px;
+            }
+            &__review {
+                font-size: 15px;
+            }
+        }
+    }
+    .carousel{
+        padding: 100px 0;
+    }
+    .tns-item {
+        img {
+            width: 80%;
+        }
+    }
+    .prev, .next {
+        display: none;
+    }
+    .tns-nav{
+        display: flex;
+        width: 30%;
+        left: 35%;
+    }
+    .tns-outer [aria-controls] {
+        height: 23px;
+        width: 23px;
     }
 }
 	
@@ -195,9 +248,28 @@
                 align-items: center;
             }
         }
+        .catalog {
+            &__tab {
+                font-size: 14px;
+            }
+            &-item {
+                &__old-price {
+                    font-size: 13px;
+                }
+                &__price {
+                    font-size: 19px;
+                }
+            }
+        }
+        .feedback {
+            &__img {
+                width: 129px;
+                height: 129px;
+            }
+        }
     }
     .carousel {
-        padding: 60px 0;
+        padding: 80px 0;
     }
     .tns-item {
         img {
@@ -207,18 +279,13 @@
     .prev, .next {
         display: none;
     }
-    .catalog {
-        &__tab {
-            font-size: 14px;
-        }
-        &-item {
-            &__old-price {
-                font-size: 13px;
-            }
-            &__price {
-                font-size: 19px;
-            }
-        }
+    .tns-nav{
+        display: flex;
+        left: 34%;
+    }
+    .tns-outer [aria-controls] {
+        height: 19px;
+        width: 19px;
     }
 }
 	
@@ -314,9 +381,37 @@
                 font-size: 13px;
             }
         }
+        .catalog {
+            &__tabs {
+                flex-wrap: wrap;
+                margin-top: 60px;
+            }    
+            &__tab {
+                margin: 5px 0;
+            }
+            &-item {
+                &__list {
+                    li{
+                        font-size: 12px;
+                    }
+                }
+                &__price {
+                    font-size: 17px;
+                }
+            }
+        }
+        .feedback {
+            &__progress {
+                font-size: 12px;
+                line-height: 9px;
+            }
+            &__review {
+                font-size: 14px;
+            }
+        }
     }
     .carousel {
-        padding: 45px 0;
+        padding: 80px 0;
     }
     .tns-item {
         img {
@@ -326,23 +421,14 @@
     .prev, .next {
         display: none;
     } 
-    .catalog {
-        &__tabs {
-            flex-wrap: wrap;
-            margin-top: 60px;
-        }    
-        &__tab {
-            margin: 5px 0;
-        }
-        &-item {
-            &__list {
-                li{
-                    font-size: 12px;
-                }
-            }
-            &__price {
-                font-size: 17px;
-            }
-        }
+    .tns-nav{
+        display: flex;
+        width: 140px;
+        top: 106%;
+        left: 19%;
+    }
+    .tns-outer [aria-controls] {
+        height: 18px;
+        width: 18px;
     }
 }
