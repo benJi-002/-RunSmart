@@ -310,7 +310,24 @@
                 height: 50px;
             }
         }
-    }    
+    } 
+    .overlay {
+        .modal {
+            width: 350px;
+            &__subtitle {
+                font-size: 16px;
+            }
+            &__descr {
+                font-size: 13px;
+            }
+        }
+        .feed-form_mt25 {
+            width: 270px;
+            input {
+                height: 45px;
+            }
+        }     
+    }
 }
 	
 @media (max-width: 575px) {
@@ -475,5 +492,17 @@
                 height: 40px;
             }
         }
-    }    
+    }   
+    .overlay {
+        .modal {
+            top: 46%;
+            width: 320px;
+            padding: 43px 25px 44px 25px;
+            &__close {
+                top: 103%;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }   
+    } 
 }
