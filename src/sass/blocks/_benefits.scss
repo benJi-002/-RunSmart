@@ -44,4 +44,20 @@
             }
         }
     }
+    &__icon {
+        &_heartbeat {
+            animation: heartbeat 2s ease infinite;
+            /* animation-name: heartbeat;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite; */
+        }
+        &_cupup {
+            animation: cupup 2s ease infinite;
+        }
+        &_shoerun {
+            animation: shoerun 2s ease infinite;
+        }
+
+    }
 }

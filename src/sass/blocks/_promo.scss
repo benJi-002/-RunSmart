@@ -54,6 +54,12 @@
             color: #FFFFFF;
             text-decoration-line: underline;
             text-transform: uppercase;
+            transition: 0.5s all;
+            &:hover {
+                font-size: 17px;
+                font-weight: 700;
+                color: $main-color;
+            }
         }
     }
 }
