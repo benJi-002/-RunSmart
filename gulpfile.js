@@ -68,4 +68,9 @@ gulp.task('images', function () {
         .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'mailer', 'images'));
+gulp.task('favicon', function () {
+    return gulp.src("src/*.ico")
+        .pipe(gulp.dest("dist/"));
+});
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'mailer', 'images', 'favicon'));
