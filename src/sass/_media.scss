@@ -38,7 +38,7 @@
         }
         .benefits {
             &__item {
-                width: 26%;
+                width: 28%;
             }
             &__subtitle {
                 font-size: 16px;
@@ -152,7 +152,7 @@
             }
             &__item {
                 margin-top: 55px;
-                width: 51%;
+                width: 56%;
                 height: 100%;
                 &:first-child {
                     margin-top: 0;
@@ -246,6 +246,11 @@
         .promo {
             &__wrapper {
                 align-items: center;
+            }
+        }
+        .benefits {
+            &__item {
+                width: 74%;
             }
         }
         .catalog {
