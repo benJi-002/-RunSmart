@@ -53,28 +53,31 @@ $(document).ready(function(){
 	});
   });
 
+  //Form validation
+
 	function valideForms(form){
 		$(form).validate({
 			rules: {
 				name: {
-				required: true,
-				minlength: 2
+					required: true,
+					minlength: 2
 				},
 				phone: "required",
 				email: {
-				required: true,
-				email: true
+					required: true,
+					email: true
 				}
+				
 			},
 			messages: {
 				name: {
-				required: "Пожалуйста, введите своё имя",
-				minlength: jQuery.validator.format("Введите {0} символа!")
+					required: "Пожалуйста, введите своё имя",
+					minlength: jQuery.validator.format("Введите {0} символа!")
 				},
 				phone: "Пожалуйста, введите свой номер телефона",
 				email: {
-				required: "Пожалуйста, введите свою почту",
-				email: "Неправильно введен адрес почты"
+					required: "Пожалуйста, введите свою почту",
+					email: "Неправильно введен адрес почты"
 				}
 			}  
 		});
